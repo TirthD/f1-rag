@@ -19,3 +19,6 @@ TOP_K = 4
 
 # Collection name in Chroma
 COLLECTION_NAME = "f1_wikipedia"
+
+# Force embeddings to CPU to avoid Metal/Ollama GPU contention on Apple Silicon
+EMBEDDING_DEVICE = "cpu"
