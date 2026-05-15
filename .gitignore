@@ -1,1 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.local
+
+# Data and vector store — don't commit raw downloads or the index
+data/
+chroma_db/
+*.sqlite
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
 .DS_Store
