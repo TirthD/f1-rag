@@ -1,0 +1,29 @@
+# Core LangChain (split-packages model)
+langchain-core
+langchain
+langchain-community
+
+# LLM provider — Ollama
+langchain-ollama
+
+# Embeddings — HuggingFace sentence-transformers
+langchain-huggingface
+sentence-transformers
+
+# Vector store — Chroma
+langchain-chroma
+
+# Document loaders
+wikipedia                  # for WikipediaLoader
+beautifulsoup4             # for WebBaseLoader, parsing HTML
+
+# Stage 2 additions (already listed so you don't reinstall later)
+rank-bm25                  # BM25 keyword retrieval
+
+# Utilities
+python-dotenv              # for env vars (e.g. LANGSMITH keys later)
+tqdm                       # progress bars during ingest
+
+# Stage 3+ (uncomment when you get there)
+# langgraph
+# requests                 # for Jolpica F1 API
