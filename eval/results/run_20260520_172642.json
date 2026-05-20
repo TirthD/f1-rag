@@ -1,0 +1,516 @@
+{
+  "timestamp": "2026-05-20T17:26:42.549576",
+  "stage": "stage_1_naive",
+  "results": [
+    {
+      "id": "q01",
+      "category": "factual_lookup",
+      "question": "Who won the 2024 Monaco Grand Prix?",
+      "expected_answer": "Charles Leclerc",
+      "actual_answer": "Charles Leclerc, his first victory since the 2022 Austrian Grand Prix and his first victory at home, ahead of Oscar Piastri and Ferrari teammate Carlos Sainz, who completed the podium.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "Motor car race The 2024 Monaco Grand Prix (officially known as the Formula 1 Grand Prix de Monaco 2024) was a Formula One motor race held on 26 May..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "2024 Monaco Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavigati..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "2024 Monaco Grand Prix Race 8 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0raceNext\u00a0race\u00a0\u2192 Layout of the Circuit de Monte Carlo, Mona..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "^ \"Leclerc clinches long-awaited home win in Monaco ahead of Piastri and Sainz after early drama\". formula1.com. 26 May 2024. Retrieved 20 Septembe..."
+        }
+      ],
+      "elapsed_seconds": 18.02,
+      "status": "ok",
+      "notes": "His first home win and first win since 2022 Austrian GP.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q02",
+      "category": "factual_lookup",
+      "question": "Where was the 2024 Las Vegas Grand Prix held?",
+      "expected_answer": "Las Vegas Strip Circuit in Paradise, Nevada (also widely referred to as Las Vegas)",
+      "actual_answer": "The 2024 Las Vegas Grand Prix was held at the Las Vegas Strip Circuit in Paradise, Nevada, United States.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "2024 Las Vegas Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavig..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "Motor car race The 2024 Las Vegas Grand Prix (officially known as the Formula 1 Heineken Silver Las Vegas Grand Prix 2024) was a Formula One motor ..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "Background[edit] The event was held at the Las Vegas Strip Circuit in Paradise, Nevada, for the second time in the circuit's history, across the we..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "2024 Las Vegas Grand Prix Race 22 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0raceNext\u00a0race\u00a0\u2192 Layout of the Las Vegas Strip CircuitR..."
+        }
+      ],
+      "elapsed_seconds": 7.14,
+      "status": "ok",
+      "notes": "Either 'Las Vegas Strip Circuit' or 'Paradise, Nevada' should be acceptable.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q03",
+      "category": "factual_lookup",
+      "question": "Who took pole position for the 2024 British Grand Prix?",
+      "expected_answer": "George Russell",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 British Grand Prix",
+          "snippet": "2024 British Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavigat..."
+        },
+        {
+          "race": "2024 British Grand Prix",
+          "snippet": "Motor car race The 2024 British Grand Prix (officially known as the Formula 1 Qatar Airways British Grand Prix 2024) was a Formula One motor race t..."
+        },
+        {
+          "race": "2024 Bahrain Grand Prix",
+          "snippet": "2024 Bahrain Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavigat..."
+        },
+        {
+          "race": "2024 United States Grand Prix",
+          "snippet": "Motor car race The 2024 United States Grand Prix (officially known as the Formula 1 Pirelli United States Grand Prix 2024) was a Formula One motor ..."
+        }
+      ],
+      "elapsed_seconds": 5.99,
+      "status": "ok",
+      "notes": "Mercedes 1-2 in qualifying with Hamilton second; Norris third.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q04",
+      "category": "factual_lookup",
+      "question": "Which team did Lando Norris drive for in 2024?",
+      "expected_answer": "McLaren",
+      "actual_answer": "McLaren.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Miami Grand Prix",
+          "snippet": "move on from their \"haunting\" experience at the 2021 Russian Grand Prix, where Norris led most of the race only to lose out following a late heavy ..."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "Lando Norris took pole position for the race ahead of George Russell and Yuki Tsunoda, the latter achieving his highest Grand Prix start to date. T..."
+        },
+        {
+          "race": "2024 Abu Dhabi Grand Prix",
+          "snippet": "Lando Norris of McLaren took pole position for the race, which he converted to a victory. Norris's victory helped his team take their ninth World C..."
+        },
+        {
+          "race": "2024 Singapore Grand Prix",
+          "snippet": "on 21 September 2024, at 17:30 local time,[14] and was topped by Norris ahead of George Russell of Mercedes and Norris's teammate Oscar Piastri.[17]"
+        }
+      ],
+      "elapsed_seconds": 4.46,
+      "status": "ok",
+      "notes": "Easy lookup; should be unambiguous.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q05",
+      "category": "factual_lookup",
+      "question": "On what date was the 2024 Abu Dhabi Grand Prix held?",
+      "expected_answer": "8 December 2024",
+      "actual_answer": "8 December 2024.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Abu Dhabi Grand Prix",
+          "snippet": "Motor car race The 2024 Abu Dhabi Grand Prix (officially known as the Formula 1 Etihad Airways Abu Dhabi Grand Prix 2024) was a Formula One motor r..."
+        },
+        {
+          "race": "2024 Abu Dhabi Grand Prix",
+          "snippet": "2024 Abu Dhabi Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavig..."
+        },
+        {
+          "race": "2024 Abu Dhabi Grand Prix",
+          "snippet": "Background[edit] The event was held at the Yas Marina Circuit in Abu Dhabi for the 16th time in the circuit's history, across the weekend of 6\u20138 De..."
+        },
+        {
+          "race": "2024 Abu Dhabi Grand Prix",
+          "snippet": "2024 Abu Dhabi Grand Prix Race 24 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0race Layout of the Yas Marina CircuitRace details[1]Da..."
+        }
+      ],
+      "elapsed_seconds": 4.93,
+      "status": "ok",
+      "notes": "Final race of the 2024 season at Yas Marina Circuit.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q06",
+      "category": "multi_fact",
+      "question": "Who finished on the podium at the 2024 S\u00e3o Paulo Grand Prix?",
+      "expected_answer": "Max Verstappen (1st), Esteban Ocon (2nd), Pierre Gasly (3rd)",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "2024 S\u00e3o Paulo Grand Prix Race 21 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0raceNext\u00a0race\u00a0\u2192 Layout of the Aut\u00f3dromo Jos\u00e9 Carlos Pa..."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "^ \"2024 S\u00e3o Paulo Grand Prix \u2013 Final Starting Grid\" (PDF). F\u00e9d\u00e9ration Internationale de l'Automobile. 3 November 2024. Retrieved 6 November 2024.  ..."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "Motor car race The 2024 S\u00e3o Paulo Grand Prix (officially known as the Formula 1 Lenovo Grande Pr\u00eamio de S\u00e3o Paulo 2024) was a Formula One motor rac..."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "^ \"2024 S\u00e3o Paulo City Grand Prix \u2013 Revised Entry List\" (PDF). F\u00e9d\u00e9ration Internationale de l'Automobile. 1 November 2024. Retrieved 1 November 2024."
+        }
+      ],
+      "elapsed_seconds": 5.59,
+      "status": "ok",
+      "notes": "Verstappen won from P17 in wet conditions; Alpine double podium.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q07",
+      "category": "multi_fact",
+      "question": "What were the weather conditions at the 2024 S\u00e3o Paulo Grand Prix?",
+      "expected_answer": "Wet/rainy. Qualifying was postponed from Saturday to Sunday morning due to rain; the race was held in wet conditions with all cars on intermediate or full wet tyres.",
+      "actual_answer": "Rain.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "2024 S\u00e3o Paulo Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavig..."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "^ \"2024 S\u00e3o Paulo City Grand Prix \u2013 Revised Entry List\" (PDF). F\u00e9d\u00e9ration Internationale de l'Automobile. 1 November 2024. Retrieved 1 November 2024."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "2024 S\u00e3o Paulo Grand Prix Race 21 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0raceNext\u00a0race\u00a0\u2192 Layout of the Aut\u00f3dromo Jos\u00e9 Carlos Pa..."
+        },
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "Motor car race The 2024 S\u00e3o Paulo Grand Prix (officially known as the Formula 1 Lenovo Grande Pr\u00eamio de S\u00e3o Paulo 2024) was a Formula One motor rac..."
+        }
+      ],
+      "elapsed_seconds": 4.27,
+      "status": "ok",
+      "notes": "Tests whether retrieval surfaces weather-related chunks.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q08",
+      "category": "multi_fact",
+      "question": "What happened to Sergio P\u00e9rez at the 2024 Monaco Grand Prix?",
+      "expected_answer": "He crashed on lap 1 in a collision with both Haas drivers (Magnussen and H\u00fclkenberg), causing a red flag.",
+      "actual_answer": "Sergio P\u00e9rez was involved in a crash at the 2024 Monaco Grand Prix, and his car damage will cost Red Bull up to \u00a32.5 million.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Azerbaijan Grand Prix",
+          "snippet": "at the Saudi Arabian Grand Prix earlier in the season when he was substituted in for Ferrari.[11]"
+        },
+        {
+          "race": "2024 Canadian Grand Prix",
+          "snippet": "won the previous race at Monaco, suspected engine issues with his Ferrari SF-24, reducing his pace. He was stuck in the midfield for a majority of ..."
+        },
+        {
+          "race": "2024 Canadian Grand Prix",
+          "snippet": "Under advice from his Red Bull team, as they wanted to avoid a safety car situation, P\u00e9rez limped back to the pits in an unsafe condition \u2013 his rea..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "^ a b Collantine, Keith (27 May 2024). \"The details revealed by fans' videos of Perez and Magnussen's Monaco GP crash\". RaceFans. Retrieved 1 June ..."
+        }
+      ],
+      "elapsed_seconds": 6.72,
+      "status": "ok",
+      "notes": "Tests whether retrieval finds incident-specific chunks within a race report.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q09",
+      "category": "multi_fact",
+      "question": "Who was declared the winner of the 2024 Belgian Grand Prix after the disqualification?",
+      "expected_answer": "Lewis Hamilton. George Russell finished first on the road but was disqualified for an underweight car; Hamilton was promoted to victory.",
+      "actual_answer": "Lewis Hamilton.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Belgian Grand Prix",
+          "snippet": "George Russell disqualified post-race, losing victory. Motor car race The 2024 Belgian Grand Prix (officially known as the Formula 1 Rolex Belgian ..."
+        },
+        {
+          "race": "2024 Belgian Grand Prix",
+          "snippet": "^ \"Verstappen claims P1 in Belgium qualifying ahead of grid penalty as he heads Leclerc and Perez\". Formula 1.com. 27 July 2024. Retrieved 27 July ..."
+        },
+        {
+          "race": "2024 Belgian Grand Prix",
+          "snippet": "2024 Belgian Grand Prix Race 14 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0raceNext\u00a0race\u00a0\u2192 Layout of the Circuit de Spa-Francorcham..."
+        },
+        {
+          "race": "2024 Belgian Grand Prix",
+          "snippet": "^ \"2024 Formula One Sporting Regulations \u2013 Issue 6\" (PDF). F\u00e9d\u00e9ration Internationale de l'Automobile. 30 April 2024. Retrieved 17 May 2024.  ^ \"Bel..."
+        }
+      ],
+      "elapsed_seconds": 6.0,
+      "status": "ok",
+      "notes": "Tests whether the system handles the DSQ correctly rather than just naming Russell.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q10",
+      "category": "comparison_synthesis",
+      "question": "How many wins did Lando Norris get in the 2024 season?",
+      "expected_answer": "4 wins \u2014 Miami, Dutch (Netherlands), Singapore, and Abu Dhabi Grands Prix.",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "86   Source:[29]     Note: Only the top five positions are included for both sets of standings.  Competitor marked in bold and with an asterisk sti..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "He finished 8th with Norris finishing 7th (without the fastest lap) or lower. He finished 9th with Norris finishing 8th (without the fastest lap) o..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "He won the race or finished ahead of Norris. He finished 3rd with the fastest lap with Norris finishing 2nd or lower. He finished 4th with the fast..."
+        },
+        {
+          "race": "2024 Singapore Grand Prix",
+          "snippet": "on 21 September 2024, at 17:30 local time,[14] and was topped by Norris ahead of George Russell of Mercedes and Norris's teammate Oscar Piastri.[17]"
+        }
+      ],
+      "elapsed_seconds": 5.01,
+      "status": "ok",
+      "notes": "Requires aggregating across multiple race pages. Likely to fail in Stage 1; this is the kind of question that motivates the structured-data path in Stage 3.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q11",
+      "category": "comparison_synthesis",
+      "question": "At which races did Charles Leclerc win in 2024?",
+      "expected_answer": "3 wins \u2014 Monaco, Italian (Monza), and United States (Austin) Grands Prix.",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Dutch Grand Prix",
+          "snippet": "2021. Verstappen finished in second, with Charles Leclerc rounding out the podium for Ferrari."
+        },
+        {
+          "race": "2024 Azerbaijan Grand Prix",
+          "snippet": "Charles Leclerc of Ferrari took pole position for the event for the fourth year in a row, but lost out to Oscar Piastri of McLaren for the win and ..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "Charles Leclerc took pole position for his home race, his third career pole in Monaco.[13] Oscar Piastri qualified in second, 0.154 seconds behind ..."
+        },
+        {
+          "race": "2024 Belgian Grand Prix",
+          "snippet": "Charles Leclerc[a] FerrariTime 1:53.754Fastest lapDriver  Sergio P\u00e9rez Red Bull Racing-Honda RBPTTime 1:44.701 on lap 44 (lap record)PodiumFirst  L..."
+        }
+      ],
+      "elapsed_seconds": 5.04,
+      "status": "ok",
+      "notes": "Same aggregation problem as Norris wins.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q12",
+      "category": "comparison_synthesis",
+      "question": "Compare Max Verstappen and Lando Norris's performances in the 2024 season.",
+      "expected_answer": "Verstappen won the Drivers' Championship for the fourth consecutive year (clinched at Las Vegas) with several wins; Norris finished second overall with 4 wins and was Verstappen's main title challenger but never overtook him in the standings.",
+      "actual_answer": "According to the context, here are some comparisons between Max Verstappen and Lando Norris's performances in the 2024 season:\n\n* At the Las Vegas Grand Prix, Verstappen had an opportunity to secure his fourth consecutive title.\n* In the same event, Norris won the race for his second career victory, breaking Verstappen's streak of pole positions and race wins at Circuit Zandvoort since its return to the Formula One calendar in 2021. Verstappen finished in second.\n* At the Qatar Grand Prix, Verstappen won the race, while Norris was tenth after receiving a ten-second stop-and-go penalty for ignoring yellow flags.\n\nIt's worth noting that the context also mentions that if Lando Norris had outscored Max Verstappen by two points at the Las Vegas Grand Prix, Verstappen would have won the championship.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "86   Source:[29]     Note: Only the top five positions are included for both sets of standings.  Competitor marked in bold and with an asterisk sti..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "World Drivers' Championship leader Max Verstappen had an opportunity to secure his fourth consecutive title at this event. At the conclusion of the..."
+        },
+        {
+          "race": "2024 Dutch Grand Prix",
+          "snippet": "McLaren's Lando Norris took pole position, with Max Verstappen of Red Bull Racing starting in second. Verstappen passed Norris before the first cor..."
+        },
+        {
+          "race": "2024 Qatar Grand Prix",
+          "snippet": "Max Verstappen won the race having taken the lead from George Russell at the start, ahead of Charles Leclerc, Oscar Piastri and Russell, who finish..."
+        }
+      ],
+      "elapsed_seconds": 21.41,
+      "status": "ok",
+      "notes": "Broad comparison \u2014 naive RAG will struggle. Tests whether retrieval surfaces season-context chunks vs single-race chunks.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q13",
+      "category": "should_refuse",
+      "question": "Who won the 2023 Monaco Grand Prix?",
+      "expected_answer": "REFUSAL \u2014 the system should say it does not have enough information, since 2023 is outside our 2024-only corpus.",
+      "actual_answer": "I don't have enough information to answer that. The provided context only mentions the 2024 Monaco Grand Prix, not the 2023 edition.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "2024 Monaco Grand Prix - Wikipedia                               Jump to content        Main menu      Main menu move to sidebar hide    \t\tNavigati..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "Motor car race The 2024 Monaco Grand Prix (officially known as the Formula 1 Grand Prix de Monaco 2024) was a Formula One motor race held on 26 May..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "2024 Monaco Grand Prix Race 8 of 24 in the 2024 Formula One World Championship\u2190\u00a0Previous\u00a0raceNext\u00a0race\u00a0\u2192 Layout of the Circuit de Monte Carlo, Mona..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "^ \"Leclerc clinches long-awaited home win in Monaco ahead of Piastri and Sainz after early drama\". formula1.com. 26 May 2024. Retrieved 20 Septembe..."
+        }
+      ],
+      "elapsed_seconds": 9.07,
+      "status": "ok",
+      "notes": "Critical test: a confident wrong answer here means the LLM is using its training data, not the retrieved context.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q14",
+      "category": "should_refuse",
+      "question": "What is Lando Norris's helmet design?",
+      "expected_answer": "REFUSAL \u2014 race reports do not typically describe driver helmet designs in detail. The system should acknowledge it doesn't have this info.",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 S\u00e3o Paulo Grand Prix",
+          "snippet": "Lando Norris took pole position for the race ahead of George Russell and Yuki Tsunoda, the latter achieving his highest Grand Prix start to date. T..."
+        },
+        {
+          "race": "2024 Miami Grand Prix",
+          "snippet": "move on from their \"haunting\" experience at the 2021 Russian Grand Prix, where Norris led most of the race only to lose out following a late heavy ..."
+        },
+        {
+          "race": "2024 Chinese Grand Prix",
+          "snippet": "Sprint qualifying report[edit] Lando Norris during the sprint qualifying session, in which he took pole"
+        },
+        {
+          "race": "2024 Dutch Grand Prix",
+          "snippet": "Lando Norris began the race in pole position. Max Verstappen, starting from second, overtook him for the lead at the start by the first corner. Ver..."
+        }
+      ],
+      "elapsed_seconds": 4.78,
+      "status": "ok",
+      "notes": "Tests grounding: model should not hallucinate from general training knowledge.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q15",
+      "category": "edge_case",
+      "question": "Who is Max Verstappen's race engineer?",
+      "expected_answer": "Gianpiero Lambiase (nickname 'GP' / 'Lambo'). Acceptable if retrieved; refusal also acceptable if the corpus doesn't contain it.",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Bahrain Grand Prix",
+          "snippet": "After taking pole position in qualifying, Max Verstappen of Red Bull Racing led every lap, won the race, and had the fastest lap, his fifth career ..."
+        },
+        {
+          "race": "2024 Saudi Arabian Grand Prix",
+          "snippet": "Max Verstappen won the race from pole position, taking his 100th podium, his ninth victory in a row, and his second victory of the season. This rac..."
+        },
+        {
+          "race": "2024 Austrian Grand Prix",
+          "snippet": "Max Verstappen Red Bull Racing-Honda RBPTTime 1:04.314Fastest lapDriver  Fernando Alonso Aston Martin Aramco-MercedesTime 1:07.694 on lap 70PodiumF..."
+        },
+        {
+          "race": "2024 Belgian Grand Prix",
+          "snippet": "Max Verstappen set the fastest time in qualifying, but was relegated to eleventh following a grid penalty, with Charles Leclerc inheriting pole pos..."
+        }
+      ],
+      "elapsed_seconds": 4.65,
+      "status": "ok",
+      "notes": "Genuinely uncertain whether race-report Wikipedia pages mention this. Score either correct answer or refusal as acceptable.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q16",
+      "category": "ambiguous_vague",
+      "question": "What was the most exciting race of the 2024 season?",
+      "expected_answer": "Subjective question. A good answer should acknowledge the subjectivity and point to candidates that the corpus describes as notable \u2014 e.g., S\u00e3o Paulo (Verstappen from P17 in the wet) or Brazilian GP chaos.",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Miami Grand Prix",
+          "snippet": "Previous\u00a0race:2024 Chinese Grand Prix  FIA Formula One World Championship2024 season  Next\u00a0race:2024 Emilia Romagna Grand Prix   Previous\u00a0race:2023..."
+        },
+        {
+          "race": "2024 United States Grand Prix",
+          "snippet": "Previous\u00a0race:2024 Singapore Grand Prix  FIA Formula One World Championship2024 season  Next\u00a0race:2024 Mexico City Grand Prix   Previous\u00a0race:2023 ..."
+        },
+        {
+          "race": "2024 Las Vegas Grand Prix",
+          "snippet": "Previous\u00a0race:2024 S\u00e3o Paulo Grand Prix  FIA Formula One World Championship2024 season  Next\u00a0race:2024 Qatar Grand Prix   Previous\u00a0race:2023 Las Ve..."
+        },
+        {
+          "race": "2024 Monaco Grand Prix",
+          "snippet": "Next\u00a0race:2024 Canadian Grand Prix   Previous\u00a0race:2023 Monaco Grand Prix  Monaco Grand Prix  Next\u00a0race:2025 Monaco Grand Prix   vteMonaco Grand Pr..."
+        }
+      ],
+      "elapsed_seconds": 5.48,
+      "status": "ok",
+      "notes": "Tests how the system handles vague questions. Shouldn't confidently name one race as objectively 'best'.",
+      "grade": null,
+      "grader_note": null
+    },
+    {
+      "id": "q17",
+      "category": "ambiguous_vague",
+      "question": "Tell me about the 2024 championship battle.",
+      "expected_answer": "Broad summary. Should mention Verstappen leading early, McLaren and Norris closing the gap mid-season, and Verstappen ultimately clinching the title at Las Vegas. Constructors went to McLaren at Abu Dhabi.",
+      "actual_answer": "I don't have enough information to answer that.",
+      "retrieved_chunks": [
+        {
+          "race": "2024 Japanese Grand Prix",
+          "snippet": "^ \"Formula 1 announces calendar for 2024\". www.formula1.com. Retrieved 6 April 2024.  ^ Leclerc, Charles (4 April 2024). \"A special helmet in memor..."
+        },
+        {
+          "race": "2024 United States Grand Prix",
+          "snippet": "Previous\u00a0race:2024 Singapore Grand Prix  FIA Formula One World Championship2024 season  Next\u00a0race:2024 Mexico City Grand Prix   Previous\u00a0race:2023 ..."
+        },
+        {
+          "race": "2024 Miami Grand Prix",
+          "snippet": "^ Gale, Ewan (May 11, 2024). \"McLaren: Norris's \"haunting\" Russia 2021 F1 defeat can be \"put behind us now\"\". Motorsport.com. Retrieved May 11, 202..."
+        },
+        {
+          "race": "2024 Mexico City Grand Prix",
+          "snippet": "Entrants[edit] See also: 2024 Formula One World Championship \u00a7\u00a0Entries"
+        }
+      ],
+      "elapsed_seconds": 5.2,
+      "status": "ok",
+      "notes": "Cross-document aggregation. Stage 1 will likely give a single-race answer instead of a season summary.",
+      "grade": null,
+      "grader_note": null
+    }
+  ]
+}

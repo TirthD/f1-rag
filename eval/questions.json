@@ -1,0 +1,125 @@
+{
+  "description": "Eval set for the F1 RAG pipeline. Each question has an expected answer (verified via web search against Wikipedia/F1.com on 2026-05-19), a category, and notes. Use this to measure retrieval + generation quality before and after each Stage 2 change.",
+  "corpus_scope": "Wikipedia pages for the 24 races of the 2024 F1 season",
+  "questions": [
+    {
+      "id": "q01",
+      "category": "factual_lookup",
+      "question": "Who won the 2024 Monaco Grand Prix?",
+      "expected_answer": "Charles Leclerc",
+      "notes": "His first home win and first win since 2022 Austrian GP."
+    },
+    {
+      "id": "q02",
+      "category": "factual_lookup",
+      "question": "Where was the 2024 Las Vegas Grand Prix held?",
+      "expected_answer": "Las Vegas Strip Circuit in Paradise, Nevada (also widely referred to as Las Vegas)",
+      "notes": "Either 'Las Vegas Strip Circuit' or 'Paradise, Nevada' should be acceptable."
+    },
+    {
+      "id": "q03",
+      "category": "factual_lookup",
+      "question": "Who took pole position for the 2024 British Grand Prix?",
+      "expected_answer": "George Russell",
+      "notes": "Mercedes 1-2 in qualifying with Hamilton second; Norris third."
+    },
+    {
+      "id": "q04",
+      "category": "factual_lookup",
+      "question": "Which team did Lando Norris drive for in 2024?",
+      "expected_answer": "McLaren",
+      "notes": "Easy lookup; should be unambiguous."
+    },
+    {
+      "id": "q05",
+      "category": "factual_lookup",
+      "question": "On what date was the 2024 Abu Dhabi Grand Prix held?",
+      "expected_answer": "8 December 2024",
+      "notes": "Final race of the 2024 season at Yas Marina Circuit."
+    },
+    {
+      "id": "q06",
+      "category": "multi_fact",
+      "question": "Who finished on the podium at the 2024 São Paulo Grand Prix?",
+      "expected_answer": "Max Verstappen (1st), Esteban Ocon (2nd), Pierre Gasly (3rd)",
+      "notes": "Verstappen won from P17 in wet conditions; Alpine double podium."
+    },
+    {
+      "id": "q07",
+      "category": "multi_fact",
+      "question": "What were the weather conditions at the 2024 São Paulo Grand Prix?",
+      "expected_answer": "Wet/rainy. Qualifying was postponed from Saturday to Sunday morning due to rain; the race was held in wet conditions with all cars on intermediate or full wet tyres.",
+      "notes": "Tests whether retrieval surfaces weather-related chunks."
+    },
+    {
+      "id": "q08",
+      "category": "multi_fact",
+      "question": "What happened to Sergio Pérez at the 2024 Monaco Grand Prix?",
+      "expected_answer": "He crashed on lap 1 in a collision with both Haas drivers (Magnussen and Hülkenberg), causing a red flag.",
+      "notes": "Tests whether retrieval finds incident-specific chunks within a race report."
+    },
+    {
+      "id": "q09",
+      "category": "multi_fact",
+      "question": "Who was declared the winner of the 2024 Belgian Grand Prix after the disqualification?",
+      "expected_answer": "Lewis Hamilton. George Russell finished first on the road but was disqualified for an underweight car; Hamilton was promoted to victory.",
+      "notes": "Tests whether the system handles the DSQ correctly rather than just naming Russell."
+    },
+    {
+      "id": "q10",
+      "category": "comparison_synthesis",
+      "question": "How many wins did Lando Norris get in the 2024 season?",
+      "expected_answer": "4 wins — Miami, Dutch (Netherlands), Singapore, and Abu Dhabi Grands Prix.",
+      "notes": "Requires aggregating across multiple race pages. Likely to fail in Stage 1; this is the kind of question that motivates the structured-data path in Stage 3."
+    },
+    {
+      "id": "q11",
+      "category": "comparison_synthesis",
+      "question": "At which races did Charles Leclerc win in 2024?",
+      "expected_answer": "3 wins — Monaco, Italian (Monza), and United States (Austin) Grands Prix.",
+      "notes": "Same aggregation problem as Norris wins."
+    },
+    {
+      "id": "q12",
+      "category": "comparison_synthesis",
+      "question": "Compare Max Verstappen and Lando Norris's performances in the 2024 season.",
+      "expected_answer": "Verstappen won the Drivers' Championship for the fourth consecutive year (clinched at Las Vegas) with several wins; Norris finished second overall with 4 wins and was Verstappen's main title challenger but never overtook him in the standings.",
+      "notes": "Broad comparison — naive RAG will struggle. Tests whether retrieval surfaces season-context chunks vs single-race chunks."
+    },
+    {
+      "id": "q13",
+      "category": "should_refuse",
+      "question": "Who won the 2023 Monaco Grand Prix?",
+      "expected_answer": "REFUSAL — the system should say it does not have enough information, since 2023 is outside our 2024-only corpus.",
+      "notes": "Critical test: a confident wrong answer here means the LLM is using its training data, not the retrieved context."
+    },
+    {
+      "id": "q14",
+      "category": "should_refuse",
+      "question": "What is Lando Norris's helmet design?",
+      "expected_answer": "REFUSAL — race reports do not typically describe driver helmet designs in detail. The system should acknowledge it doesn't have this info.",
+      "notes": "Tests grounding: model should not hallucinate from general training knowledge."
+    },
+    {
+      "id": "q15",
+      "category": "edge_case",
+      "question": "Who is Max Verstappen's race engineer?",
+      "expected_answer": "Gianpiero Lambiase (nickname 'GP' / 'Lambo'). Acceptable if retrieved; refusal also acceptable if the corpus doesn't contain it.",
+      "notes": "Genuinely uncertain whether race-report Wikipedia pages mention this. Score either correct answer or refusal as acceptable."
+    },
+    {
+      "id": "q16",
+      "category": "ambiguous_vague",
+      "question": "What was the most exciting race of the 2024 season?",
+      "expected_answer": "Subjective question. A good answer should acknowledge the subjectivity and point to candidates that the corpus describes as notable — e.g., São Paulo (Verstappen from P17 in the wet) or Brazilian GP chaos.",
+      "notes": "Tests how the system handles vague questions. Shouldn't confidently name one race as objectively 'best'."
+    },
+    {
+      "id": "q17",
+      "category": "ambiguous_vague",
+      "question": "Tell me about the 2024 championship battle.",
+      "expected_answer": "Broad summary. Should mention Verstappen leading early, McLaren and Norris closing the gap mid-season, and Verstappen ultimately clinching the title at Las Vegas. Constructors went to McLaren at Abu Dhabi.",
+      "notes": "Cross-document aggregation. Stage 1 will likely give a single-race answer instead of a season summary."
+    }
+  ]
+}
